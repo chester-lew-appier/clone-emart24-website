@@ -121,5 +121,18 @@
 
 <script src="data.js"></script>
 <script src="script.js"></script>
+
+<script>
+  // BotBonnie WebChat. Page ID only — never place API tokens, API secrets
+  // or CRM encryption keys in static frontend code.
+  const BOTBONNIE_PAGE_ID = "page-76f0f7a558854c7aa46afcc6";
+
+  window.BBAsyncInit = function () {
+    BB.init({
+      appId: BOTBONNIE_PAGE_ID
+    });
+  };
+</script>
+<script async type="text/javascript" src="https://asset.botbonnie.com/sdk/sdk.js"></script>
 </body>
 </html>
