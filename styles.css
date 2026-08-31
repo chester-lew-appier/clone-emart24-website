@@ -1018,7 +1018,8 @@ p { margin: 0 0 1.1em; }
 .to-top {
   position: fixed;
   right: 0;
-  bottom: 42px;
+  /* clears the BotBonnie launcher, which is fixed at right:20px bottom:20px (60x60) */
+  bottom: 96px;
   z-index: 80;
   width: 44px; height: 44px;
   border: 0;
@@ -1154,7 +1155,7 @@ p { margin: 0 0 1.1em; }
 
   .scroll-hint { display: none; }
 
-  .to-top { bottom: 20px; }
+  .to-top { bottom: 96px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

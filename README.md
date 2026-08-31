@@ -28,6 +28,10 @@ assets/           110 images
 Framework-free: plain HTML, CSS and JavaScript. Roboto is loaded from Google Fonts;
 everything else is local.
 
+BotBonnie WebChat is loaded on all four pages from `https://asset.botbonnie.com/sdk/sdk.js`
+and initialised via `window.BBAsyncInit` with Page ID `page-76f0f7a558854c7aa46afcc6`. Only
+the Page ID appears in the frontend — no API tokens, secrets or CRM keys.
+
 `data.js` holds the repeated content as data, so the product grid, outlet cards, certified
 list and news cards are rendered from arrays rather than duplicated markup. To change an
 outlet or menu item, edit `data.js`.
